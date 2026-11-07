@@ -1,6 +1,6 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
-    'name': 'Amount in Words: Bangla, Hindi, Urdu & 40+ Languages',
+    'name': 'Amount in Words',
     'version': '19.0.1.0.0',
     'category': 'Productivity',
     'summary': 'Amount in words for any model, field or report: English, Bangla, Hindi, Urdu built in and 40+ more languages automatic.',
