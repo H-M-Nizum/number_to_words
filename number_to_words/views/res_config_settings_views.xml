@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.number.to.words</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="95"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app data-string="Amount in Words" string="Amount in Words" name="number_to_words"
+                     groups="base.group_system">
+                    <block title="Amount in Words" name="number_to_words_block">
+                        <setting string="Language" help="Always write the words in this language. Empty: follow the language of each user (English, Bangla, Hindi and Urdu are built in; Spanish, Arabic, French, German and about 40 more languages are written automatically).">
+                            <field name="number_to_words_language_id" options="{'no_create': True, 'no_open': True}"/>
+                        </setting>
+                        <setting string="English Text Case" help="Applies to the languages that use the text case.">
+                            <field name="number_to_words_text_case"/>
+                        </setting>
+                        <setting string="Subunit Style" help="Write the subunit in words or as a fraction of 100.">
+                            <field name="number_to_words_fraction_style"/>
+                        </setting>
+                        <setting string="Cheque Style" help="Surround currency amounts with *** so nothing can be added.">
+                            <field name="number_to_words_cheque_style"/>
+                        </setting>
+                        <setting string="Append Only" help="Add the 'Only' word of the language at the end of currency amounts.">
+                            <field name="number_to_words_append_only"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

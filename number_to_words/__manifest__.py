@@ -1,0 +1,43 @@
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+{
+    'name': 'Amount in Words: Bangla, Hindi, Urdu & 40+ Languages',
+    'version': '19.0.1.0.0',
+    'category': 'Productivity',
+    'summary': 'Amount in words for any model, field or report: English, Bangla, Hindi, Urdu built in and 40+ more languages automatic.',
+    'description': """Convert integers, decimals and currency amounts to words. English, Bangla, Hindi and Urdu are built in, and Spanish, Arabic, French, German and about 40 more languages are written automatically in the language of the user. Choose the model, field and position yourself with Display Rules, on forms and on PDF reports.""",
+    'author': 'H.M.Nizum',
+    'maintainer': 'H.M.Nizum',
+    'website': 'https://github.com/H-M-Nizum/number_to_words',
+    'license': 'LGPL-3',
+    'depends': ['base', 'web'],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/number_to_words_data.xml',
+        'views/number_to_words_rule_views.xml',
+        'views/res_config_settings_views.xml',
+        'views/menus.xml',
+    ],
+    'assets': {
+        'web.assets_backend': [
+            'number_to_words/static/src/fields/*',
+        ],
+    },
+    'images': [
+        'static/description/banner.png',
+        'static/description/screenshots/03_product_form_words.jpg',
+        'static/description/screenshots/05_sale_pdf_words.jpg',
+        'static/description/screenshots/02_display_rule_form.jpg',
+        'static/description/screenshots/09_line_dialog.jpg',
+        'static/description/screenshots/10_report_place_dropdown.jpg',
+        'static/description/screenshots/18_rule_active_toggle.jpg',
+        'static/description/screenshots/19_price_card_hindi.jpg',
+        'static/description/screenshots/11_sale_pdf_bangla.jpg',
+        'static/description/screenshots/08_report_rule_form.jpg',
+        'static/description/screenshots/06_settings.jpg',
+    ],
+    'post_init_hook': 'post_init_hook',
+    'uninstall_hook': 'uninstall_hook',
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

@@ -1,0 +1,1069 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* number_to_words
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-07 15:17+0000\n"
+"PO-Revision-Date: 2026-11-07 15:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: number_to_words
+#. odoo-javascript
+#: code:addons/number_to_words/static/src/fields/number_to_words_field.js:0
+msgid "'en' for English or 'bn' for Bangla. Empty: module settings."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-javascript
+#: code:addons/number_to_words/static/src/fields/number_to_words_field.js:0
+msgid "'number' or 'currency'."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_scale__exponent
+msgid ""
+"2 for a hundred, 3 for a thousand, 5 for a lakh, 7 for a crore, 6 for a "
+"million..."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__anchor_field_id
+msgid "A field displayed in the form view. The words are placed next to it."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__active
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__active
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_search
+msgid "Active"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Add the 'Only' word of the language at the end of currency amounts."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__xpath_expr
+msgid ""
+"Advanced: where to place the words in the report, filled in from the chosen "
+"place."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule_line__position__after
+msgid "After"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__line_ids
+msgid "All Lines"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid ""
+"Always write the words in this language. Empty: follow the language of each "
+"user (English, Bangla, Hindi and Urdu are built in; Spanish, Arabic, French,"
+" German and about 40 more languages are written automatically)."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_res_config_settings__number_to_words_language_id
+msgid ""
+"Always write the words in this language. Empty: follow the language of the "
+"user."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.ui.menu,name:number_to_words.menu_number_to_words_root
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Amount in Words"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_currency_name
+msgid "Amount in Words Currency Name"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_rule
+msgid "Amount in Words Display Rule"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_rule_line
+msgid "Amount in Words Display Rule Line"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_language
+msgid "Amount in Words Language"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_number
+msgid "Amount in Words Number Word"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_system
+msgid "Amount in Words Numbering System"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_scale
+msgid "Amount in Words Scale"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__word_and
+msgid "And"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__number_to_words_append_only
+msgid "Append \"Only\" to Amounts"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Append Only"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Applies to the languages that use the text case."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__apply_text_case
+msgid "Apply the Title / lower / UPPER case of the settings to this language."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__res_config_settings__number_to_words_fraction_style__fraction
+msgid "As a fraction (… and 50/100)"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.language,name:number_to_words.lang_bn
+msgid "Bangla (বাংলা)"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.system,name:number_to_words.system_bn
+msgid "Bangla: এক শত (spaced)"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.system,name:number_to_words.system_bn_sho
+msgid "Bangla: একশো (joined)"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule_line__position__before
+msgid "Before"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_anchor__kind__block
+msgid "Block"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Cheque Style"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__number_to_words_cheque_style
+msgid "Cheque Style (*** … ***)"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Choose a place in the report..."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "Choose the field the words are placed next to."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "Choose the place of the report the words are placed next to."
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Choose the report above first, then add the fields to show in words."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__code
+msgid "Code"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_anchor__kind__column
+msgid "Column"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.actions.act_window,help:number_to_words.number_to_words_rule_action
+msgid "Create a display rule"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__create_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__create_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_res_currency
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__currency_field_id
+msgid "Currency Field"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule_line__mode__currency
+msgid "Currency amount"
+msgstr ""
+
+#. module: number_to_words
+#. odoo-javascript
+#: code:addons/number_to_words/static/src/fields/number_to_words_field.js:0
+msgid "Currency field"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__word_point
+msgid "Decimal Point"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__digits
+msgid "Digits"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:number_to_words.field_res_currency__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.actions.act_window,name:number_to_words.number_to_words_rule_action
+#: model:ir.ui.menu,name:number_to_words.menu_number_to_words_rules
+msgid "Display Rules"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.constraint,message:number_to_words.constraint_number_to_words_language_code_unique
+msgid "Each language needs its own code."
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.language,name:number_to_words.lang_en
+msgid "English"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__number_to_words_text_case
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "English Text Case"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_anchor__kind__field
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Field"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Fields"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__form_field_names
+msgid "Fields of the Form"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_anchor__stamp
+msgid "Fingerprint of the templates the places were read from."
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Form Field"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__form_line_ids
+msgid "Form Fields"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__base_view_id
+msgid "Form View"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule_line__target__form
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_search
+msgid "Form view"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule__target__form
+msgid "Form view (on screen)"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__report_view_ids
+msgid "Generated Report Views"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__view_id
+msgid "Generated View"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.language,name:number_to_words.lang_hi
+msgid "Hindi (हिन्दी)"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.system,name:number_to_words.system_hi
+msgid "Hindi: सौ / हज़ार / लाख / करोड़"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_res_currency__number_to_words_name_ids
+msgid ""
+"How the currency is called in each language, e.g. Taka / Paisa or টাকা / "
+"পয়সা."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_number__word
+msgid "How the number is written, e.g. Seven."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__id
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__id
+#: model:ir.model.fields,field_description:number_to_words.field_res_currency__id
+msgid "ID"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__res_config_settings__number_to_words_fraction_style__words
+msgid "In words (… and Fifty Paisa)"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_search
+msgid "Inactive"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.system,name:number_to_words.system_en_international
+msgid "International (thousand, million, billion)"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__override_core_amount_text
+msgid ""
+"Invoices, checks and every feature using Odoo's own \"amount in letters\" "
+"write the amount with this language when it is the language of the user."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__joiner
+msgid "Joiner"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__kind
+msgid "Kind"
+msgstr ""
+
+#. module: number_to_words
+#. odoo-javascript
+#: code:addons/number_to_words/static/src/fields/number_to_words_field.js:0
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__language_id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__language_id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__language_id
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__language_id
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Language"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__language_id
+msgid ""
+"Language of the words. Empty: the language of the settings, then of the "
+"user."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__write_uid
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__write_date
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__currency_field_id
+msgid "Leave empty to use the 'currency_id' field of the model."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-javascript
+#: code:addons/number_to_words/static/src/fields/number_to_words_field.js:0
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__mode
+msgid "Mode"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__model_id
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_search
+msgid "Model"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__model_name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__model_name
+msgid "Model Name"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule__model_id
+msgid "Model whose form view shows the words."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__name
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__name
+msgid "Name"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule__record_var
+msgid ""
+"Name of the variable holding the record in the template ('doc', 'o', "
+"'product'...). It is detected from the report template."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_res_currency__number_to_words_name_ids
+msgid "Names in Words"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule__form_field_names
+msgid ""
+"Names of the fields displayed in the chosen form view (the places offered to"
+" the lines)."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__word_minus
+msgid "Negative"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__number_count
+msgid "Number Count"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__field_id
+msgid "Number Field"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__number_ids
+msgid "Number Words"
+msgstr ""
+
+#. module: number_to_words
+#. odoo-javascript
+#: code:addons/number_to_words/static/src/fields/number_to_words_field.js:0
+msgid "Number to Words"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words
+msgid "Number to Words Converter"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__system_id
+msgid "Numbering System"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__system_ids
+msgid "Numbering Systems"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule__report_view_ids
+msgid "One change per report template the lines are placed in."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__word_only
+msgid "Only"
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_language.py:0
+msgid "Only positive numbers have a word."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule_line__target__report
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_search
+msgid "PDF report"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule__target__report
+msgid "PDF report / QWeb template"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.actions.act_window,help:number_to_words.number_to_words_rule_action
+msgid ""
+"Pick a model, then add a line for each numeric field you want shown in words"
+" on its form view."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__name
+msgid "Place"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__anchor_field_id
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Place Next To"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__report_anchor_id
+msgid "Place in the Report"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_rule_line__mode__number
+msgid "Plain number"
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "Please choose the form view."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "Please choose the report template."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__position
+msgid "Position"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__exponent
+msgid "Power of Ten"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__record_var
+msgid "Record Var"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__record_var
+msgid "Record Variable"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__report_id
+msgid "Report"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Report Field"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__report_line_ids
+msgid "Report Fields"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__report_name
+msgid "Report Name"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model,name:number_to_words.model_number_to_words_anchor
+msgid "Report Place for Amount in Words"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__report_view_id
+msgid "Report Template"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__report_anchor_id
+msgid "Report only: the part of the report the words are placed next to."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__rule_id
+msgid "Rule"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__scale_ids
+msgid "Scales"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__sequence
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__sequence
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__sequence
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__sequence
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_system__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.actions.act_window,name:number_to_words.action_number_to_words_settings
+#: model:ir.ui.menu,name:number_to_words.menu_number_to_words_settings
+msgid "Settings"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__code
+msgid ""
+"Short code of the language, e.g. en, bn, hi. It is matched with the language"
+" of the user (en_US -> en) and used in the widget and report options."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule__target
+msgid "Show In"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.system,name:number_to_words.system_en_south_asian
+msgid "South Asian (thousand, lakh, crore)"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__stamp
+msgid "Stamp"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__subunit
+msgid "Subunit"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__number_to_words_fraction_style
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Subunit Style"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Surround currency amounts with *** so nothing can be added."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__system_id
+msgid "System"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__target
+msgid "Target"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__template_ids
+msgid "Templates"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__tens_joiner
+msgid "Tens Joiner"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule__report_view_id
+msgid ""
+"The QWeb template of the report that contains the content, usually the one "
+"ending with _document."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_language.py:0
+msgid "The digits of a language must be exactly ten characters."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "The field %(field)s does not belong to the model %(model)s."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid ""
+"The field %(field)s is not displayed in the form view %(view)s. Pick a field"
+" that is visible on that form."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_number__value
+msgid "The number, e.g. 7, 13 or 40."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__field_id
+msgid "The numeric field converted to words."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid ""
+"The place \"%(place)s\" does not belong to the report %(report)s. Choose the"
+" place again."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "The place %(place)s was not found in the report template %(view)s."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_language.py:0
+msgid "The power of ten must be between 1 and 59."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule__report_id
+msgid "The printed report of the model, e.g. Quotation / Order."
+msgstr ""
+
+#. module: number_to_words
+#. odoo-python
+#: code:addons/number_to_words/models/number_to_words_rule.py:0
+msgid "The record variable must be a valid name, e.g. doc or o."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_anchor__view_id
+msgid "The report template the places were listed for."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_anchor__template_ids
+msgid ""
+"The templates that really contain the place (a report often calls other "
+"templates, and its layouts share the same places)."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__digits
+msgid ""
+"The ten digits of the language, from 0 to 9 (e.g. ০১২৩৪৫৬৭৮৯), used when a "
+"fraction like 50/100 is written with figures. Empty: the usual digits."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__system_id
+msgid "The way big numbers are written (scales like thousand, lakh, crore)."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_scale__word
+msgid "The word, e.g. Thousand."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.constraint,message:number_to_words.constraint_number_to_words_currency_name_currency_language_unique
+msgid "This currency already has a name in this language."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.constraint,message:number_to_words.constraint_number_to_words_number_value_unique
+msgid "This number already has a word in this language."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.constraint,message:number_to_words.constraint_number_to_words_scale_exponent_unique
+msgid "This scale already exists in this numbering system."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_anchor__kind__title
+msgid "Title"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__res_config_settings__number_to_words_text_case__title
+msgid "Title Case"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__res_config_settings__number_to_words_text_case__upper
+msgid "UPPER CASE"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_currency_name__unit
+msgid "Unit"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.language,name:number_to_words.lang_ur
+msgid "Urdu (اردو)"
+msgstr ""
+
+#. module: number_to_words
+#: model:number.to.words.system,name:number_to_words.system_ur
+msgid "Urdu: سو / ہزار / لاکھ / کروڑ"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__override_core_amount_text
+msgid "Use for Odoo's Amount in Letters"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__apply_text_case
+msgid "Use the Text Case Setting"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__value
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__value
+#: model:ir.model.fields.selection,name:number_to_words.selection__number_to_words_anchor__kind__value
+msgid "Value"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__view_id
+msgid "View"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "What to convert"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "Where to show it"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_rule_line__target
+msgid "Which kind of rule this line belongs to."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_number__word
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_scale__word
+msgid "Word"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_language__separator
+msgid "Word Separator"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_res_config_settings__number_to_words_language_id
+msgid "Words Language"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.res_config_settings_view_form
+msgid "Write the subunit in words or as a fraction of 100."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__word_only
+msgid "Written at the end of an amount when \"Append Only\" is on, e.g. Only."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__word_minus
+msgid "Written before a negative number, e.g. Minus."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__tens_joiner
+msgid ""
+"Written between tens and units when the number is not in the word table, "
+"e.g. a hyphen in Twenty-One."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__word_and
+msgid "Written between the amount and the subunit, e.g. and."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__word_point
+msgid "Written between the integer and the decimals, e.g. Point."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_language__separator
+msgid "Written between the parts of a number. Usually a space."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_scale__joiner
+msgid ""
+"Written between the quantity and the word: a space (One Thousand) or nothing"
+" (একশো)."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_rule_line__xpath_expr
+msgid "XPath"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "XPath (technical)"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,field_description:number_to_words.field_number_to_words_anchor__xpath
+msgid "Xpath"
+msgstr ""
+
+#. module: number_to_words
+#: model_terms:ir.ui.view,arch_db:number_to_words.number_to_words_rule_view_form
+msgid "e.g. Amounts in words on quotations"
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_currency_name__subunit
+msgid "e.g. Paisa or পয়সা."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields,help:number_to_words.field_number_to_words_currency_name__unit
+msgid "e.g. Taka or টাকা."
+msgstr ""
+
+#. module: number_to_words
+#: model:ir.model.fields.selection,name:number_to_words.selection__res_config_settings__number_to_words_text_case__lower
+msgid "lower case"
+msgstr ""

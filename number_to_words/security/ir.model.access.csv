@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_number_to_words_rule_system,number.to.words.rule.system,model_number_to_words_rule,base.group_system,1,1,1,1
+access_number_to_words_rule_line_system,number.to.words.rule.line.system,model_number_to_words_rule_line,base.group_system,1,1,1,1
+access_number_to_words_anchor_system,number.to.words.anchor.system,model_number_to_words_anchor,base.group_system,1,1,1,1
+access_number_to_words_language_system,number.to.words.language.system,model_number_to_words_language,base.group_system,1,1,1,1
+access_number_to_words_number_system,number.to.words.number.system,model_number_to_words_number,base.group_system,1,1,1,1
+access_number_to_words_system_system,number.to.words.system.system,model_number_to_words_system,base.group_system,1,1,1,1
+access_number_to_words_scale_system,number.to.words.scale.system,model_number_to_words_scale,base.group_system,1,1,1,1
+access_number_to_words_currency_name_system,number.to.words.currency.name.system,model_number_to_words_currency_name,base.group_system,1,1,1,1
+access_number_to_words_language_user,number.to.words.language.user,model_number_to_words_language,base.group_user,1,0,0,0
+access_number_to_words_currency_name_user,number.to.words.currency.name.user,model_number_to_words_currency_name,base.group_user,1,0,0,0

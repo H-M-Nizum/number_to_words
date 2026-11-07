@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_number_to_words_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_mode">form</field>
+        <field name="target">current</field>
+        <field name="context">{'module': 'number_to_words', 'bin_size': False}</field>
+    </record>
+
+    <menuitem id="menu_number_to_words_root"
+              name="Amount in Words"
+              action="number_to_words_rule_action"
+              web_icon="number_to_words,static/description/icon.png"
+              groups="base.group_system"
+              sequence="95"/>
+    <menuitem id="menu_number_to_words_rules"
+              name="Display Rules"
+              parent="menu_number_to_words_root"
+              action="number_to_words_rule_action"
+              sequence="10"/>
+    <menuitem id="menu_number_to_words_settings"
+              name="Settings"
+              parent="menu_number_to_words_root"
+              action="action_number_to_words_settings"
+              sequence="20"/>
+</odoo>

@@ -1,0 +1,2014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Vocabulary shipped with the module. Everything below is plain data: edit it from
+         Amount in Words > Languages, or add your own language. It is never overwritten on upgrade. -->
+    <record id="lang_en" model="number.to.words.language">
+        <field name="name">English</field>
+        <field name="code">en</field>
+        <field name="sequence" eval="10"/>
+        <field name="word_minus">Minus</field>
+        <field name="word_point">Point</field>
+        <field name="word_and">and</field>
+        <field name="word_only">Only</field>
+        <field name="tens_joiner">-</field>
+        <field name="separator" eval="' '"/>
+        <field name="digits">0123456789</field>
+        <field name="apply_text_case" eval="True"/>
+        <field name="override_core_amount_text" eval="False"/>
+    </record>
+    <record id="system_en_international" model="number.to.words.system">
+        <field name="name">International (thousand, million, billion)</field>
+        <field name="language_id" ref="lang_en"/>
+        <field name="sequence" eval="10"/>
+    </record>
+    <record id="system_en_south_asian" model="number.to.words.system">
+        <field name="name">South Asian (thousand, lakh, crore)</field>
+        <field name="language_id" ref="lang_en"/>
+        <field name="sequence" eval="20"/>
+    </record>
+    <record id="num_en_0" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="0"/>
+        <field name="word">Zero</field>
+    </record>
+    <record id="num_en_1" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="1"/>
+        <field name="word">One</field>
+    </record>
+    <record id="num_en_2" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="2"/>
+        <field name="word">Two</field>
+    </record>
+    <record id="num_en_3" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="3"/>
+        <field name="word">Three</field>
+    </record>
+    <record id="num_en_4" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="4"/>
+        <field name="word">Four</field>
+    </record>
+    <record id="num_en_5" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="5"/>
+        <field name="word">Five</field>
+    </record>
+    <record id="num_en_6" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="6"/>
+        <field name="word">Six</field>
+    </record>
+    <record id="num_en_7" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="7"/>
+        <field name="word">Seven</field>
+    </record>
+    <record id="num_en_8" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="8"/>
+        <field name="word">Eight</field>
+    </record>
+    <record id="num_en_9" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="9"/>
+        <field name="word">Nine</field>
+    </record>
+    <record id="num_en_10" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="10"/>
+        <field name="word">Ten</field>
+    </record>
+    <record id="num_en_11" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="11"/>
+        <field name="word">Eleven</field>
+    </record>
+    <record id="num_en_12" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="12"/>
+        <field name="word">Twelve</field>
+    </record>
+    <record id="num_en_13" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="13"/>
+        <field name="word">Thirteen</field>
+    </record>
+    <record id="num_en_14" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="14"/>
+        <field name="word">Fourteen</field>
+    </record>
+    <record id="num_en_15" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="15"/>
+        <field name="word">Fifteen</field>
+    </record>
+    <record id="num_en_16" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="16"/>
+        <field name="word">Sixteen</field>
+    </record>
+    <record id="num_en_17" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="17"/>
+        <field name="word">Seventeen</field>
+    </record>
+    <record id="num_en_18" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="18"/>
+        <field name="word">Eighteen</field>
+    </record>
+    <record id="num_en_19" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="19"/>
+        <field name="word">Nineteen</field>
+    </record>
+    <record id="num_en_20" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="20"/>
+        <field name="word">Twenty</field>
+    </record>
+    <record id="num_en_30" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="30"/>
+        <field name="word">Thirty</field>
+    </record>
+    <record id="num_en_40" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="40"/>
+        <field name="word">Forty</field>
+    </record>
+    <record id="num_en_50" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="50"/>
+        <field name="word">Fifty</field>
+    </record>
+    <record id="num_en_60" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="60"/>
+        <field name="word">Sixty</field>
+    </record>
+    <record id="num_en_70" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="70"/>
+        <field name="word">Seventy</field>
+    </record>
+    <record id="num_en_80" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="80"/>
+        <field name="word">Eighty</field>
+    </record>
+    <record id="num_en_90" model="number.to.words.number">
+        <field name="language_id" ref="lang_en"/>
+        <field name="value" eval="90"/>
+        <field name="word">Ninety</field>
+    </record>
+    <record id="scale_en_intl_2" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="2"/>
+        <field name="word">Hundred</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_3" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="3"/>
+        <field name="word">Thousand</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_6" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="6"/>
+        <field name="word">Million</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_9" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="9"/>
+        <field name="word">Billion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_12" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="12"/>
+        <field name="word">Trillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_15" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="15"/>
+        <field name="word">Quadrillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_18" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="18"/>
+        <field name="word">Quintillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_21" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="21"/>
+        <field name="word">Sextillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_24" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="24"/>
+        <field name="word">Septillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_27" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="27"/>
+        <field name="word">Octillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_30" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="30"/>
+        <field name="word">Nonillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_intl_33" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_international"/>
+        <field name="exponent" eval="33"/>
+        <field name="word">Decillion</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_2" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="2"/>
+        <field name="word">Hundred</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_3" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="3"/>
+        <field name="word">Thousand</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_5" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="5"/>
+        <field name="word">Lakh</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_7" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="7"/>
+        <field name="word">Crore</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_9" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="9"/>
+        <field name="word">Arab</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_11" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="11"/>
+        <field name="word">Kharab</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_13" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="13"/>
+        <field name="word">Neel</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_15" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="15"/>
+        <field name="word">Padma</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_en_sa_17" model="number.to.words.scale">
+        <field name="system_id" ref="system_en_south_asian"/>
+        <field name="exponent" eval="17"/>
+        <field name="word">Shankh</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="lang_bn" model="number.to.words.language">
+        <field name="name">Bangla (বাংলা)</field>
+        <field name="code">bn</field>
+        <field name="sequence" eval="20"/>
+        <field name="word_minus">মাইনাস</field>
+        <field name="word_point">দশমিক</field>
+        <field name="word_and">এবং</field>
+        <field name="word_only">মাত্র</field>
+        <field name="tens_joiner" eval="' '"/>
+        <field name="separator" eval="' '"/>
+        <field name="digits">০১২৩৪৫৬৭৮৯</field>
+        <field name="apply_text_case" eval="False"/>
+        <field name="override_core_amount_text" eval="True"/>
+    </record>
+    <record id="system_bn" model="number.to.words.system">
+        <field name="name">Bangla: এক শত (spaced)</field>
+        <field name="language_id" ref="lang_bn"/>
+        <field name="sequence" eval="10"/>
+    </record>
+    <record id="system_bn_sho" model="number.to.words.system">
+        <field name="name">Bangla: একশো (joined)</field>
+        <field name="language_id" ref="lang_bn"/>
+        <field name="sequence" eval="20"/>
+    </record>
+    <record id="num_bn_0" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="0"/>
+        <field name="word">শূন্য</field>
+    </record>
+    <record id="num_bn_1" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="1"/>
+        <field name="word">এক</field>
+    </record>
+    <record id="num_bn_2" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="2"/>
+        <field name="word">দুই</field>
+    </record>
+    <record id="num_bn_3" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="3"/>
+        <field name="word">তিন</field>
+    </record>
+    <record id="num_bn_4" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="4"/>
+        <field name="word">চার</field>
+    </record>
+    <record id="num_bn_5" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="5"/>
+        <field name="word">পাঁচ</field>
+    </record>
+    <record id="num_bn_6" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="6"/>
+        <field name="word">ছয়</field>
+    </record>
+    <record id="num_bn_7" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="7"/>
+        <field name="word">সাত</field>
+    </record>
+    <record id="num_bn_8" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="8"/>
+        <field name="word">আট</field>
+    </record>
+    <record id="num_bn_9" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="9"/>
+        <field name="word">নয়</field>
+    </record>
+    <record id="num_bn_10" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="10"/>
+        <field name="word">দশ</field>
+    </record>
+    <record id="num_bn_11" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="11"/>
+        <field name="word">এগারো</field>
+    </record>
+    <record id="num_bn_12" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="12"/>
+        <field name="word">বারো</field>
+    </record>
+    <record id="num_bn_13" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="13"/>
+        <field name="word">তেরো</field>
+    </record>
+    <record id="num_bn_14" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="14"/>
+        <field name="word">চৌদ্দ</field>
+    </record>
+    <record id="num_bn_15" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="15"/>
+        <field name="word">পনেরো</field>
+    </record>
+    <record id="num_bn_16" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="16"/>
+        <field name="word">ষোল</field>
+    </record>
+    <record id="num_bn_17" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="17"/>
+        <field name="word">সতেরো</field>
+    </record>
+    <record id="num_bn_18" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="18"/>
+        <field name="word">আঠারো</field>
+    </record>
+    <record id="num_bn_19" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="19"/>
+        <field name="word">উনিশ</field>
+    </record>
+    <record id="num_bn_20" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="20"/>
+        <field name="word">বিশ</field>
+    </record>
+    <record id="num_bn_21" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="21"/>
+        <field name="word">একুশ</field>
+    </record>
+    <record id="num_bn_22" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="22"/>
+        <field name="word">বাইশ</field>
+    </record>
+    <record id="num_bn_23" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="23"/>
+        <field name="word">তেইশ</field>
+    </record>
+    <record id="num_bn_24" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="24"/>
+        <field name="word">চব্বিশ</field>
+    </record>
+    <record id="num_bn_25" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="25"/>
+        <field name="word">পঁচিশ</field>
+    </record>
+    <record id="num_bn_26" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="26"/>
+        <field name="word">ছাব্বিশ</field>
+    </record>
+    <record id="num_bn_27" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="27"/>
+        <field name="word">সাতাশ</field>
+    </record>
+    <record id="num_bn_28" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="28"/>
+        <field name="word">আটাশ</field>
+    </record>
+    <record id="num_bn_29" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="29"/>
+        <field name="word">ঊনত্রিশ</field>
+    </record>
+    <record id="num_bn_30" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="30"/>
+        <field name="word">ত্রিশ</field>
+    </record>
+    <record id="num_bn_31" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="31"/>
+        <field name="word">একত্রিশ</field>
+    </record>
+    <record id="num_bn_32" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="32"/>
+        <field name="word">বত্রিশ</field>
+    </record>
+    <record id="num_bn_33" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="33"/>
+        <field name="word">তেত্রিশ</field>
+    </record>
+    <record id="num_bn_34" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="34"/>
+        <field name="word">চৌত্রিশ</field>
+    </record>
+    <record id="num_bn_35" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="35"/>
+        <field name="word">পঁয়ত্রিশ</field>
+    </record>
+    <record id="num_bn_36" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="36"/>
+        <field name="word">ছত্রিশ</field>
+    </record>
+    <record id="num_bn_37" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="37"/>
+        <field name="word">সাঁইত্রিশ</field>
+    </record>
+    <record id="num_bn_38" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="38"/>
+        <field name="word">আটত্রিশ</field>
+    </record>
+    <record id="num_bn_39" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="39"/>
+        <field name="word">ঊনচল্লিশ</field>
+    </record>
+    <record id="num_bn_40" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="40"/>
+        <field name="word">চল্লিশ</field>
+    </record>
+    <record id="num_bn_41" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="41"/>
+        <field name="word">একচল্লিশ</field>
+    </record>
+    <record id="num_bn_42" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="42"/>
+        <field name="word">বিয়াল্লিশ</field>
+    </record>
+    <record id="num_bn_43" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="43"/>
+        <field name="word">তেতাল্লিশ</field>
+    </record>
+    <record id="num_bn_44" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="44"/>
+        <field name="word">চুয়াল্লিশ</field>
+    </record>
+    <record id="num_bn_45" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="45"/>
+        <field name="word">পঁয়তাল্লিশ</field>
+    </record>
+    <record id="num_bn_46" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="46"/>
+        <field name="word">ছেচল্লিশ</field>
+    </record>
+    <record id="num_bn_47" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="47"/>
+        <field name="word">সাতচল্লিশ</field>
+    </record>
+    <record id="num_bn_48" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="48"/>
+        <field name="word">আটচল্লিশ</field>
+    </record>
+    <record id="num_bn_49" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="49"/>
+        <field name="word">ঊনপঞ্চাশ</field>
+    </record>
+    <record id="num_bn_50" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="50"/>
+        <field name="word">পঞ্চাশ</field>
+    </record>
+    <record id="num_bn_51" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="51"/>
+        <field name="word">একান্ন</field>
+    </record>
+    <record id="num_bn_52" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="52"/>
+        <field name="word">বাহান্ন</field>
+    </record>
+    <record id="num_bn_53" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="53"/>
+        <field name="word">তিপ্পান্ন</field>
+    </record>
+    <record id="num_bn_54" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="54"/>
+        <field name="word">চুয়ান্ন</field>
+    </record>
+    <record id="num_bn_55" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="55"/>
+        <field name="word">পঞ্চান্ন</field>
+    </record>
+    <record id="num_bn_56" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="56"/>
+        <field name="word">ছাপ্পান্ন</field>
+    </record>
+    <record id="num_bn_57" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="57"/>
+        <field name="word">সাতান্ন</field>
+    </record>
+    <record id="num_bn_58" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="58"/>
+        <field name="word">আটান্ন</field>
+    </record>
+    <record id="num_bn_59" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="59"/>
+        <field name="word">ঊনষাট</field>
+    </record>
+    <record id="num_bn_60" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="60"/>
+        <field name="word">ষাট</field>
+    </record>
+    <record id="num_bn_61" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="61"/>
+        <field name="word">একষট্টি</field>
+    </record>
+    <record id="num_bn_62" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="62"/>
+        <field name="word">বাষট্টি</field>
+    </record>
+    <record id="num_bn_63" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="63"/>
+        <field name="word">তেষট্টি</field>
+    </record>
+    <record id="num_bn_64" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="64"/>
+        <field name="word">চৌষট্টি</field>
+    </record>
+    <record id="num_bn_65" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="65"/>
+        <field name="word">পঁয়ষট্টি</field>
+    </record>
+    <record id="num_bn_66" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="66"/>
+        <field name="word">ছেষট্টি</field>
+    </record>
+    <record id="num_bn_67" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="67"/>
+        <field name="word">সাতষট্টি</field>
+    </record>
+    <record id="num_bn_68" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="68"/>
+        <field name="word">আটষট্টি</field>
+    </record>
+    <record id="num_bn_69" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="69"/>
+        <field name="word">ঊনসত্তর</field>
+    </record>
+    <record id="num_bn_70" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="70"/>
+        <field name="word">সত্তর</field>
+    </record>
+    <record id="num_bn_71" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="71"/>
+        <field name="word">একাত্তর</field>
+    </record>
+    <record id="num_bn_72" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="72"/>
+        <field name="word">বাহাত্তর</field>
+    </record>
+    <record id="num_bn_73" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="73"/>
+        <field name="word">তিয়াত্তর</field>
+    </record>
+    <record id="num_bn_74" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="74"/>
+        <field name="word">চুয়াত্তর</field>
+    </record>
+    <record id="num_bn_75" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="75"/>
+        <field name="word">পঁচাত্তর</field>
+    </record>
+    <record id="num_bn_76" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="76"/>
+        <field name="word">ছিয়াত্তর</field>
+    </record>
+    <record id="num_bn_77" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="77"/>
+        <field name="word">সাতাত্তর</field>
+    </record>
+    <record id="num_bn_78" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="78"/>
+        <field name="word">আটাত্তর</field>
+    </record>
+    <record id="num_bn_79" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="79"/>
+        <field name="word">ঊনআশি</field>
+    </record>
+    <record id="num_bn_80" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="80"/>
+        <field name="word">আশি</field>
+    </record>
+    <record id="num_bn_81" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="81"/>
+        <field name="word">একাশি</field>
+    </record>
+    <record id="num_bn_82" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="82"/>
+        <field name="word">বিরাশি</field>
+    </record>
+    <record id="num_bn_83" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="83"/>
+        <field name="word">তিরাশি</field>
+    </record>
+    <record id="num_bn_84" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="84"/>
+        <field name="word">চুরাশি</field>
+    </record>
+    <record id="num_bn_85" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="85"/>
+        <field name="word">পঁচাশি</field>
+    </record>
+    <record id="num_bn_86" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="86"/>
+        <field name="word">ছিয়াশি</field>
+    </record>
+    <record id="num_bn_87" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="87"/>
+        <field name="word">সাতাশি</field>
+    </record>
+    <record id="num_bn_88" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="88"/>
+        <field name="word">অষ্টাশি</field>
+    </record>
+    <record id="num_bn_89" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="89"/>
+        <field name="word">ঊননব্বই</field>
+    </record>
+    <record id="num_bn_90" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="90"/>
+        <field name="word">নব্বই</field>
+    </record>
+    <record id="num_bn_91" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="91"/>
+        <field name="word">একানব্বই</field>
+    </record>
+    <record id="num_bn_92" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="92"/>
+        <field name="word">বিরানব্বই</field>
+    </record>
+    <record id="num_bn_93" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="93"/>
+        <field name="word">তিরানব্বই</field>
+    </record>
+    <record id="num_bn_94" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="94"/>
+        <field name="word">চুরানব্বই</field>
+    </record>
+    <record id="num_bn_95" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="95"/>
+        <field name="word">পঁচানব্বই</field>
+    </record>
+    <record id="num_bn_96" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="96"/>
+        <field name="word">ছিয়ানব্বই</field>
+    </record>
+    <record id="num_bn_97" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="97"/>
+        <field name="word">সাতানব্বই</field>
+    </record>
+    <record id="num_bn_98" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="98"/>
+        <field name="word">আটানব্বই</field>
+    </record>
+    <record id="num_bn_99" model="number.to.words.number">
+        <field name="language_id" ref="lang_bn"/>
+        <field name="value" eval="99"/>
+        <field name="word">নিরানব্বই</field>
+    </record>
+    <record id="scale_bn_2" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn"/>
+        <field name="exponent" eval="2"/>
+        <field name="word">শত</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_bn_3" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn"/>
+        <field name="exponent" eval="3"/>
+        <field name="word">হাজার</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_bn_5" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn"/>
+        <field name="exponent" eval="5"/>
+        <field name="word">লক্ষ</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_bn_7" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn"/>
+        <field name="exponent" eval="7"/>
+        <field name="word">কোটি</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_bn_sho_2" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn_sho"/>
+        <field name="exponent" eval="2"/>
+        <field name="word">শো</field>
+        <field name="joiner" eval="''"/>
+    </record>
+    <record id="scale_bn_sho_3" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn_sho"/>
+        <field name="exponent" eval="3"/>
+        <field name="word">হাজার</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_bn_sho_5" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn_sho"/>
+        <field name="exponent" eval="5"/>
+        <field name="word">লক্ষ</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_bn_sho_7" model="number.to.words.scale">
+        <field name="system_id" ref="system_bn_sho"/>
+        <field name="exponent" eval="7"/>
+        <field name="word">কোটি</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <!-- Hindi and Urdu: not supported by the num2words library, so they are built in like Bangla. -->
+    <record id="lang_hi" model="number.to.words.language">
+        <field name="name">Hindi (हिन्दी)</field>
+        <field name="code">hi</field>
+        <field name="sequence" eval="30"/>
+        <field name="separator" eval="' '"/>
+        <field name="tens_joiner" eval="' '"/>
+        <field name="digits">०१२३४५६७८९</field>
+        <field name="apply_text_case" eval="False"/>
+        <field name="override_core_amount_text" eval="True"/>
+        <field name="word_minus">माइनस</field>
+        <field name="word_point">दशमलव</field>
+        <field name="word_and">और</field>
+        <field name="word_only">मात्र</field>
+    </record>
+    <record id="system_hi" model="number.to.words.system">
+        <field name="name">Hindi: सौ / हज़ार / लाख / करोड़</field>
+        <field name="language_id" ref="lang_hi"/>
+        <field name="sequence" eval="10"/>
+    </record>
+    <record id="num_hi_0" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="0"/>
+        <field name="word">शून्य</field>
+    </record>
+    <record id="num_hi_1" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="1"/>
+        <field name="word">एक</field>
+    </record>
+    <record id="num_hi_2" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="2"/>
+        <field name="word">दो</field>
+    </record>
+    <record id="num_hi_3" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="3"/>
+        <field name="word">तीन</field>
+    </record>
+    <record id="num_hi_4" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="4"/>
+        <field name="word">चार</field>
+    </record>
+    <record id="num_hi_5" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="5"/>
+        <field name="word">पाँच</field>
+    </record>
+    <record id="num_hi_6" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="6"/>
+        <field name="word">छह</field>
+    </record>
+    <record id="num_hi_7" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="7"/>
+        <field name="word">सात</field>
+    </record>
+    <record id="num_hi_8" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="8"/>
+        <field name="word">आठ</field>
+    </record>
+    <record id="num_hi_9" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="9"/>
+        <field name="word">नौ</field>
+    </record>
+    <record id="num_hi_10" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="10"/>
+        <field name="word">दस</field>
+    </record>
+    <record id="num_hi_11" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="11"/>
+        <field name="word">ग्यारह</field>
+    </record>
+    <record id="num_hi_12" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="12"/>
+        <field name="word">बारह</field>
+    </record>
+    <record id="num_hi_13" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="13"/>
+        <field name="word">तेरह</field>
+    </record>
+    <record id="num_hi_14" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="14"/>
+        <field name="word">चौदह</field>
+    </record>
+    <record id="num_hi_15" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="15"/>
+        <field name="word">पंद्रह</field>
+    </record>
+    <record id="num_hi_16" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="16"/>
+        <field name="word">सोलह</field>
+    </record>
+    <record id="num_hi_17" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="17"/>
+        <field name="word">सत्रह</field>
+    </record>
+    <record id="num_hi_18" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="18"/>
+        <field name="word">अठारह</field>
+    </record>
+    <record id="num_hi_19" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="19"/>
+        <field name="word">उन्नीस</field>
+    </record>
+    <record id="num_hi_20" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="20"/>
+        <field name="word">बीस</field>
+    </record>
+    <record id="num_hi_21" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="21"/>
+        <field name="word">इक्कीस</field>
+    </record>
+    <record id="num_hi_22" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="22"/>
+        <field name="word">बाईस</field>
+    </record>
+    <record id="num_hi_23" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="23"/>
+        <field name="word">तेईस</field>
+    </record>
+    <record id="num_hi_24" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="24"/>
+        <field name="word">चौबीस</field>
+    </record>
+    <record id="num_hi_25" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="25"/>
+        <field name="word">पच्चीस</field>
+    </record>
+    <record id="num_hi_26" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="26"/>
+        <field name="word">छब्बीस</field>
+    </record>
+    <record id="num_hi_27" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="27"/>
+        <field name="word">सत्ताईस</field>
+    </record>
+    <record id="num_hi_28" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="28"/>
+        <field name="word">अट्ठाईस</field>
+    </record>
+    <record id="num_hi_29" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="29"/>
+        <field name="word">उनतीस</field>
+    </record>
+    <record id="num_hi_30" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="30"/>
+        <field name="word">तीस</field>
+    </record>
+    <record id="num_hi_31" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="31"/>
+        <field name="word">इकतीस</field>
+    </record>
+    <record id="num_hi_32" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="32"/>
+        <field name="word">बत्तीस</field>
+    </record>
+    <record id="num_hi_33" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="33"/>
+        <field name="word">तैंतीस</field>
+    </record>
+    <record id="num_hi_34" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="34"/>
+        <field name="word">चौंतीस</field>
+    </record>
+    <record id="num_hi_35" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="35"/>
+        <field name="word">पैंतीस</field>
+    </record>
+    <record id="num_hi_36" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="36"/>
+        <field name="word">छत्तीस</field>
+    </record>
+    <record id="num_hi_37" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="37"/>
+        <field name="word">सैंतीस</field>
+    </record>
+    <record id="num_hi_38" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="38"/>
+        <field name="word">अड़तीस</field>
+    </record>
+    <record id="num_hi_39" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="39"/>
+        <field name="word">उनतालीस</field>
+    </record>
+    <record id="num_hi_40" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="40"/>
+        <field name="word">चालीस</field>
+    </record>
+    <record id="num_hi_41" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="41"/>
+        <field name="word">इकतालीस</field>
+    </record>
+    <record id="num_hi_42" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="42"/>
+        <field name="word">बयालीस</field>
+    </record>
+    <record id="num_hi_43" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="43"/>
+        <field name="word">तैंतालीस</field>
+    </record>
+    <record id="num_hi_44" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="44"/>
+        <field name="word">चौवालीस</field>
+    </record>
+    <record id="num_hi_45" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="45"/>
+        <field name="word">पैंतालीस</field>
+    </record>
+    <record id="num_hi_46" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="46"/>
+        <field name="word">छियालीस</field>
+    </record>
+    <record id="num_hi_47" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="47"/>
+        <field name="word">सैंतालीस</field>
+    </record>
+    <record id="num_hi_48" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="48"/>
+        <field name="word">अड़तालीस</field>
+    </record>
+    <record id="num_hi_49" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="49"/>
+        <field name="word">उनचास</field>
+    </record>
+    <record id="num_hi_50" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="50"/>
+        <field name="word">पचास</field>
+    </record>
+    <record id="num_hi_51" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="51"/>
+        <field name="word">इक्यावन</field>
+    </record>
+    <record id="num_hi_52" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="52"/>
+        <field name="word">बावन</field>
+    </record>
+    <record id="num_hi_53" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="53"/>
+        <field name="word">तिरपन</field>
+    </record>
+    <record id="num_hi_54" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="54"/>
+        <field name="word">चौवन</field>
+    </record>
+    <record id="num_hi_55" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="55"/>
+        <field name="word">पचपन</field>
+    </record>
+    <record id="num_hi_56" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="56"/>
+        <field name="word">छप्पन</field>
+    </record>
+    <record id="num_hi_57" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="57"/>
+        <field name="word">सत्तावन</field>
+    </record>
+    <record id="num_hi_58" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="58"/>
+        <field name="word">अट्ठावन</field>
+    </record>
+    <record id="num_hi_59" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="59"/>
+        <field name="word">उनसठ</field>
+    </record>
+    <record id="num_hi_60" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="60"/>
+        <field name="word">साठ</field>
+    </record>
+    <record id="num_hi_61" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="61"/>
+        <field name="word">इकसठ</field>
+    </record>
+    <record id="num_hi_62" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="62"/>
+        <field name="word">बासठ</field>
+    </record>
+    <record id="num_hi_63" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="63"/>
+        <field name="word">तिरसठ</field>
+    </record>
+    <record id="num_hi_64" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="64"/>
+        <field name="word">चौंसठ</field>
+    </record>
+    <record id="num_hi_65" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="65"/>
+        <field name="word">पैंसठ</field>
+    </record>
+    <record id="num_hi_66" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="66"/>
+        <field name="word">छियासठ</field>
+    </record>
+    <record id="num_hi_67" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="67"/>
+        <field name="word">सड़सठ</field>
+    </record>
+    <record id="num_hi_68" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="68"/>
+        <field name="word">अड़सठ</field>
+    </record>
+    <record id="num_hi_69" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="69"/>
+        <field name="word">उनहत्तर</field>
+    </record>
+    <record id="num_hi_70" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="70"/>
+        <field name="word">सत्तर</field>
+    </record>
+    <record id="num_hi_71" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="71"/>
+        <field name="word">इकहत्तर</field>
+    </record>
+    <record id="num_hi_72" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="72"/>
+        <field name="word">बहत्तर</field>
+    </record>
+    <record id="num_hi_73" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="73"/>
+        <field name="word">तिहत्तर</field>
+    </record>
+    <record id="num_hi_74" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="74"/>
+        <field name="word">चौहत्तर</field>
+    </record>
+    <record id="num_hi_75" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="75"/>
+        <field name="word">पचहत्तर</field>
+    </record>
+    <record id="num_hi_76" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="76"/>
+        <field name="word">छिहत्तर</field>
+    </record>
+    <record id="num_hi_77" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="77"/>
+        <field name="word">सतहत्तर</field>
+    </record>
+    <record id="num_hi_78" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="78"/>
+        <field name="word">अठहत्तर</field>
+    </record>
+    <record id="num_hi_79" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="79"/>
+        <field name="word">उनासी</field>
+    </record>
+    <record id="num_hi_80" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="80"/>
+        <field name="word">अस्सी</field>
+    </record>
+    <record id="num_hi_81" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="81"/>
+        <field name="word">इक्यासी</field>
+    </record>
+    <record id="num_hi_82" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="82"/>
+        <field name="word">बयासी</field>
+    </record>
+    <record id="num_hi_83" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="83"/>
+        <field name="word">तिरासी</field>
+    </record>
+    <record id="num_hi_84" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="84"/>
+        <field name="word">चौरासी</field>
+    </record>
+    <record id="num_hi_85" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="85"/>
+        <field name="word">पचासी</field>
+    </record>
+    <record id="num_hi_86" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="86"/>
+        <field name="word">छियासी</field>
+    </record>
+    <record id="num_hi_87" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="87"/>
+        <field name="word">सतासी</field>
+    </record>
+    <record id="num_hi_88" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="88"/>
+        <field name="word">अठासी</field>
+    </record>
+    <record id="num_hi_89" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="89"/>
+        <field name="word">नवासी</field>
+    </record>
+    <record id="num_hi_90" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="90"/>
+        <field name="word">नब्बे</field>
+    </record>
+    <record id="num_hi_91" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="91"/>
+        <field name="word">इक्यानवे</field>
+    </record>
+    <record id="num_hi_92" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="92"/>
+        <field name="word">बानवे</field>
+    </record>
+    <record id="num_hi_93" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="93"/>
+        <field name="word">तिरानवे</field>
+    </record>
+    <record id="num_hi_94" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="94"/>
+        <field name="word">चौरानवे</field>
+    </record>
+    <record id="num_hi_95" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="95"/>
+        <field name="word">पचानवे</field>
+    </record>
+    <record id="num_hi_96" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="96"/>
+        <field name="word">छियानवे</field>
+    </record>
+    <record id="num_hi_97" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="97"/>
+        <field name="word">सत्तानवे</field>
+    </record>
+    <record id="num_hi_98" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="98"/>
+        <field name="word">अट्ठानवे</field>
+    </record>
+    <record id="num_hi_99" model="number.to.words.number">
+        <field name="language_id" ref="lang_hi"/>
+        <field name="value" eval="99"/>
+        <field name="word">निन्यानवे</field>
+    </record>
+    <record id="scale_hi_2" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="2"/>
+        <field name="word">सौ</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_3" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="3"/>
+        <field name="word">हज़ार</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_5" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="5"/>
+        <field name="word">लाख</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_7" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="7"/>
+        <field name="word">करोड़</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_9" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="9"/>
+        <field name="word">अरब</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_11" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="11"/>
+        <field name="word">खरब</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_13" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="13"/>
+        <field name="word">नील</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_15" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="15"/>
+        <field name="word">पद्म</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_hi_17" model="number.to.words.scale">
+        <field name="system_id" ref="system_hi"/>
+        <field name="exponent" eval="17"/>
+        <field name="word">शंख</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="lang_ur" model="number.to.words.language">
+        <field name="name">Urdu (اردو)</field>
+        <field name="code">ur</field>
+        <field name="sequence" eval="40"/>
+        <field name="separator" eval="' '"/>
+        <field name="tens_joiner" eval="' '"/>
+        <field name="digits">۰۱۲۳۴۵۶۷۸۹</field>
+        <field name="apply_text_case" eval="False"/>
+        <field name="override_core_amount_text" eval="True"/>
+        <field name="word_minus">منفی</field>
+        <field name="word_point">اعشاریہ</field>
+        <field name="word_and">اور</field>
+        <field name="word_only">صرف</field>
+    </record>
+    <record id="system_ur" model="number.to.words.system">
+        <field name="name">Urdu: سو / ہزار / لاکھ / کروڑ</field>
+        <field name="language_id" ref="lang_ur"/>
+        <field name="sequence" eval="10"/>
+    </record>
+    <record id="num_ur_0" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="0"/>
+        <field name="word">صفر</field>
+    </record>
+    <record id="num_ur_1" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="1"/>
+        <field name="word">ایک</field>
+    </record>
+    <record id="num_ur_2" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="2"/>
+        <field name="word">دو</field>
+    </record>
+    <record id="num_ur_3" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="3"/>
+        <field name="word">تین</field>
+    </record>
+    <record id="num_ur_4" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="4"/>
+        <field name="word">چار</field>
+    </record>
+    <record id="num_ur_5" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="5"/>
+        <field name="word">پانچ</field>
+    </record>
+    <record id="num_ur_6" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="6"/>
+        <field name="word">چھ</field>
+    </record>
+    <record id="num_ur_7" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="7"/>
+        <field name="word">سات</field>
+    </record>
+    <record id="num_ur_8" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="8"/>
+        <field name="word">آٹھ</field>
+    </record>
+    <record id="num_ur_9" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="9"/>
+        <field name="word">نو</field>
+    </record>
+    <record id="num_ur_10" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="10"/>
+        <field name="word">دس</field>
+    </record>
+    <record id="num_ur_11" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="11"/>
+        <field name="word">گیارہ</field>
+    </record>
+    <record id="num_ur_12" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="12"/>
+        <field name="word">بارہ</field>
+    </record>
+    <record id="num_ur_13" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="13"/>
+        <field name="word">تیرہ</field>
+    </record>
+    <record id="num_ur_14" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="14"/>
+        <field name="word">چودہ</field>
+    </record>
+    <record id="num_ur_15" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="15"/>
+        <field name="word">پندرہ</field>
+    </record>
+    <record id="num_ur_16" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="16"/>
+        <field name="word">سولہ</field>
+    </record>
+    <record id="num_ur_17" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="17"/>
+        <field name="word">سترہ</field>
+    </record>
+    <record id="num_ur_18" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="18"/>
+        <field name="word">اٹھارہ</field>
+    </record>
+    <record id="num_ur_19" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="19"/>
+        <field name="word">انیس</field>
+    </record>
+    <record id="num_ur_20" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="20"/>
+        <field name="word">بیس</field>
+    </record>
+    <record id="num_ur_21" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="21"/>
+        <field name="word">اکیس</field>
+    </record>
+    <record id="num_ur_22" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="22"/>
+        <field name="word">بائیس</field>
+    </record>
+    <record id="num_ur_23" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="23"/>
+        <field name="word">تئیس</field>
+    </record>
+    <record id="num_ur_24" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="24"/>
+        <field name="word">چوبیس</field>
+    </record>
+    <record id="num_ur_25" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="25"/>
+        <field name="word">پچیس</field>
+    </record>
+    <record id="num_ur_26" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="26"/>
+        <field name="word">چھبیس</field>
+    </record>
+    <record id="num_ur_27" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="27"/>
+        <field name="word">ستائیس</field>
+    </record>
+    <record id="num_ur_28" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="28"/>
+        <field name="word">اٹھائیس</field>
+    </record>
+    <record id="num_ur_29" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="29"/>
+        <field name="word">انتیس</field>
+    </record>
+    <record id="num_ur_30" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="30"/>
+        <field name="word">تیس</field>
+    </record>
+    <record id="num_ur_31" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="31"/>
+        <field name="word">اکتیس</field>
+    </record>
+    <record id="num_ur_32" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="32"/>
+        <field name="word">بتیس</field>
+    </record>
+    <record id="num_ur_33" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="33"/>
+        <field name="word">تینتیس</field>
+    </record>
+    <record id="num_ur_34" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="34"/>
+        <field name="word">چونتیس</field>
+    </record>
+    <record id="num_ur_35" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="35"/>
+        <field name="word">پینتیس</field>
+    </record>
+    <record id="num_ur_36" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="36"/>
+        <field name="word">چھتیس</field>
+    </record>
+    <record id="num_ur_37" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="37"/>
+        <field name="word">سینتیس</field>
+    </record>
+    <record id="num_ur_38" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="38"/>
+        <field name="word">اڑتیس</field>
+    </record>
+    <record id="num_ur_39" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="39"/>
+        <field name="word">انتالیس</field>
+    </record>
+    <record id="num_ur_40" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="40"/>
+        <field name="word">چالیس</field>
+    </record>
+    <record id="num_ur_41" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="41"/>
+        <field name="word">اکتالیس</field>
+    </record>
+    <record id="num_ur_42" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="42"/>
+        <field name="word">بیالیس</field>
+    </record>
+    <record id="num_ur_43" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="43"/>
+        <field name="word">تینتالیس</field>
+    </record>
+    <record id="num_ur_44" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="44"/>
+        <field name="word">چوالیس</field>
+    </record>
+    <record id="num_ur_45" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="45"/>
+        <field name="word">پینتالیس</field>
+    </record>
+    <record id="num_ur_46" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="46"/>
+        <field name="word">چھیالیس</field>
+    </record>
+    <record id="num_ur_47" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="47"/>
+        <field name="word">سینتالیس</field>
+    </record>
+    <record id="num_ur_48" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="48"/>
+        <field name="word">اڑتالیس</field>
+    </record>
+    <record id="num_ur_49" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="49"/>
+        <field name="word">انچاس</field>
+    </record>
+    <record id="num_ur_50" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="50"/>
+        <field name="word">پچاس</field>
+    </record>
+    <record id="num_ur_51" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="51"/>
+        <field name="word">اکیاون</field>
+    </record>
+    <record id="num_ur_52" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="52"/>
+        <field name="word">باون</field>
+    </record>
+    <record id="num_ur_53" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="53"/>
+        <field name="word">ترپن</field>
+    </record>
+    <record id="num_ur_54" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="54"/>
+        <field name="word">چون</field>
+    </record>
+    <record id="num_ur_55" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="55"/>
+        <field name="word">پچپن</field>
+    </record>
+    <record id="num_ur_56" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="56"/>
+        <field name="word">چھپن</field>
+    </record>
+    <record id="num_ur_57" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="57"/>
+        <field name="word">ستاون</field>
+    </record>
+    <record id="num_ur_58" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="58"/>
+        <field name="word">اٹھاون</field>
+    </record>
+    <record id="num_ur_59" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="59"/>
+        <field name="word">انسٹھ</field>
+    </record>
+    <record id="num_ur_60" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="60"/>
+        <field name="word">ساٹھ</field>
+    </record>
+    <record id="num_ur_61" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="61"/>
+        <field name="word">اکسٹھ</field>
+    </record>
+    <record id="num_ur_62" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="62"/>
+        <field name="word">باسٹھ</field>
+    </record>
+    <record id="num_ur_63" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="63"/>
+        <field name="word">تریسٹھ</field>
+    </record>
+    <record id="num_ur_64" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="64"/>
+        <field name="word">چونسٹھ</field>
+    </record>
+    <record id="num_ur_65" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="65"/>
+        <field name="word">پینسٹھ</field>
+    </record>
+    <record id="num_ur_66" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="66"/>
+        <field name="word">چھیاسٹھ</field>
+    </record>
+    <record id="num_ur_67" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="67"/>
+        <field name="word">سڑسٹھ</field>
+    </record>
+    <record id="num_ur_68" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="68"/>
+        <field name="word">اڑسٹھ</field>
+    </record>
+    <record id="num_ur_69" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="69"/>
+        <field name="word">انہتر</field>
+    </record>
+    <record id="num_ur_70" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="70"/>
+        <field name="word">ستر</field>
+    </record>
+    <record id="num_ur_71" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="71"/>
+        <field name="word">اکہتر</field>
+    </record>
+    <record id="num_ur_72" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="72"/>
+        <field name="word">بہتر</field>
+    </record>
+    <record id="num_ur_73" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="73"/>
+        <field name="word">تہتر</field>
+    </record>
+    <record id="num_ur_74" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="74"/>
+        <field name="word">چوہتر</field>
+    </record>
+    <record id="num_ur_75" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="75"/>
+        <field name="word">پچھتر</field>
+    </record>
+    <record id="num_ur_76" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="76"/>
+        <field name="word">چھہتر</field>
+    </record>
+    <record id="num_ur_77" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="77"/>
+        <field name="word">ستتر</field>
+    </record>
+    <record id="num_ur_78" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="78"/>
+        <field name="word">اٹھہتر</field>
+    </record>
+    <record id="num_ur_79" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="79"/>
+        <field name="word">اناسی</field>
+    </record>
+    <record id="num_ur_80" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="80"/>
+        <field name="word">اسی</field>
+    </record>
+    <record id="num_ur_81" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="81"/>
+        <field name="word">اکیاسی</field>
+    </record>
+    <record id="num_ur_82" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="82"/>
+        <field name="word">بیاسی</field>
+    </record>
+    <record id="num_ur_83" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="83"/>
+        <field name="word">تراسی</field>
+    </record>
+    <record id="num_ur_84" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="84"/>
+        <field name="word">چوراسی</field>
+    </record>
+    <record id="num_ur_85" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="85"/>
+        <field name="word">پچاسی</field>
+    </record>
+    <record id="num_ur_86" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="86"/>
+        <field name="word">چھیاسی</field>
+    </record>
+    <record id="num_ur_87" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="87"/>
+        <field name="word">ستاسی</field>
+    </record>
+    <record id="num_ur_88" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="88"/>
+        <field name="word">اٹھاسی</field>
+    </record>
+    <record id="num_ur_89" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="89"/>
+        <field name="word">نواسی</field>
+    </record>
+    <record id="num_ur_90" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="90"/>
+        <field name="word">نوے</field>
+    </record>
+    <record id="num_ur_91" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="91"/>
+        <field name="word">اکیانوے</field>
+    </record>
+    <record id="num_ur_92" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="92"/>
+        <field name="word">بانوے</field>
+    </record>
+    <record id="num_ur_93" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="93"/>
+        <field name="word">ترانوے</field>
+    </record>
+    <record id="num_ur_94" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="94"/>
+        <field name="word">چورانوے</field>
+    </record>
+    <record id="num_ur_95" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="95"/>
+        <field name="word">پچانوے</field>
+    </record>
+    <record id="num_ur_96" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="96"/>
+        <field name="word">چھیانوے</field>
+    </record>
+    <record id="num_ur_97" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="97"/>
+        <field name="word">ستانوے</field>
+    </record>
+    <record id="num_ur_98" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="98"/>
+        <field name="word">اٹھانوے</field>
+    </record>
+    <record id="num_ur_99" model="number.to.words.number">
+        <field name="language_id" ref="lang_ur"/>
+        <field name="value" eval="99"/>
+        <field name="word">ننانوے</field>
+    </record>
+    <record id="scale_ur_2" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="2"/>
+        <field name="word">سو</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_3" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="3"/>
+        <field name="word">ہزار</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_5" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="5"/>
+        <field name="word">لاکھ</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_7" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="7"/>
+        <field name="word">کروڑ</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_9" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="9"/>
+        <field name="word">ارب</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_11" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="11"/>
+        <field name="word">کھرب</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_13" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="13"/>
+        <field name="word">نیل</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_15" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="15"/>
+        <field name="word">پدم</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+    <record id="scale_ur_17" model="number.to.words.scale">
+        <field name="system_id" ref="system_ur"/>
+        <field name="exponent" eval="17"/>
+        <field name="word">سنکھ</field>
+        <field name="joiner" eval="' '"/>
+    </record>
+</odoo>

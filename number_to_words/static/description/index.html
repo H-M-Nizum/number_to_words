@@ -1,0 +1,74 @@
+<section style="font-family:Inter,Arial,sans-serif;color:#2b2b2b;max-width:1000px;margin:0 auto;padding:24px 16px">
+
+  <div style="text-align:center;padding:32px 16px;background:linear-gradient(135deg,#8e6282,#5b3853);color:#fff;border-radius:14px">
+    <h1 style="margin:0 0 8px;font-size:34px">Amount in Words — English &amp; Bangla</h1>
+    <p style="margin:0;font-size:18px;opacity:.95">123 &rarr; One Hundred Twenty-Three &nbsp;|&nbsp; একশত তেইশ</p>
+    <p style="margin:12px 0 0;opacity:.9">Any model &middot; any field &middot; forms and PDF reports &middot; zero dependencies</p>
+  </div>
+
+  <h2 style="margin-top:36px">Screenshots</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+    <figure style="margin:0"><img src="screenshots/03_product_form_words.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Words on a form"/><figcaption>Words on a form view</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/05_sale_pdf_words.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Words on a PDF"/><figcaption>Words on the printed quotation</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/02_display_rule_form.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Display rule"/><figcaption>Display Rule: one line per field</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/09_line_dialog.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Line dialog"/><figcaption>Add or edit a line in a dialog</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/10_report_place_dropdown.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Report places"/><figcaption>Pick the place of a report in plain words</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/11_sale_pdf_bangla.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Bangla quotation"/><figcaption>Quotation in Bangla</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/08_report_rule_form.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Report rule"/><figcaption>Rule for a PDF report</figcaption></figure>
+    <figure style="margin:0"><img src="screenshots/06_settings.jpg" style="width:100%;border:1px solid #ddd;border-radius:8px" alt="Settings"/><figcaption>Settings</figcaption></figure>
+  </div>
+
+  <h2 style="margin-top:36px">Why this module</h2>
+  <ul style="line-height:1.8">
+    <li><b>Many languages, nothing to set up.</b> English, Bangla, Hindi and Urdu are built in; Spanish, Arabic, French, German, Portuguese, Russian, Turkish, Indonesian, Japanese, Korean and 30+ more are written automatically in the language of each user.</li>
+    <li><b>One module for every app, nothing hard-coded.</b> The module knows no model and no field: you pick them in <i>Display Rules</i>. English and Bangla words work out of the box.</li>
+    <li><b>Real Bangla.</b> Full 0&ndash;99 vocabulary, শত / হাজার / লক্ষ / কোটি, decimals (দশমিক), currency (টাকা / পয়সা) and "মাত্র".</li>
+    <li><b>You decide where it shows.</b> Display Rules: pick the model, the number field and the position. One rule per model, one line per field.</li>
+    <li><b>Forms and PDF reports.</b> Put the words on a screen or on any printed QWeb report.</li>
+    <li><b>No external Python package.</b> Nothing to install on the server.</li>
+    <li><b>Works with Odoo's own "amount in letters".</b> Invoices and check printing speak Bangla or lakh/crore when you choose.</li>
+  </ul>
+
+  <h2 style="margin-top:36px">Features</h2>
+  <table style="width:100%;border-collapse:collapse;line-height:1.5">
+    <tr style="background:#f4eef2"><th style="text-align:left;padding:8px">Area</th><th style="text-align:left;padding:8px">What you get</th></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Languages</td><td style="padding:8px;border-bottom:1px solid #eee">Built in: English (international or lakh/crore), Bangla, Hindi, Urdu. Automatic: Spanish, Arabic, French, German, Portuguese, Russian, Italian, Turkish, Indonesian, Japanese, Korean, Vietnamese, Persian and more</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Values</td><td style="padding:8px;border-bottom:1px solid #eee">Integers, decimals (read digit by digit), negatives, currency amounts with unit and subunit</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Display Rules</td><td style="padding:8px;border-bottom:1px solid #eee">Form views and PDF reports, before/after any field or any part of a report picked from a plain-words list (no XPath), per-line language and mode</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Currencies</td><td style="padding:8px;border-bottom:1px solid #eee">Unit and subunit of the currency (Taka / Paisa, টাকা / পয়সা), common currencies included</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Formatting</td><td style="padding:8px;border-bottom:1px solid #eee">Title / lower / UPPER case, "Only / মাত্র", cheque style <code>*** … ***</code>, subunit as words or <code>50/100</code>, Bangla hundreds as "এক শত" or "একশো"</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Widget</td><td style="padding:8px;border-bottom:1px solid #eee"><code>number_to_words</code> field widget for Float, Integer and Monetary fields</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #eee">Developers</td><td style="padding:8px;border-bottom:1px solid #eee"><code>env['number.to.words'].to_words(value, lang, mode, currency_id)</code> from Python, QWeb or JSON-RPC</td></tr>
+    <tr><td style="padding:8px">Any app</td><td style="padding:8px">One module, no code per app: you choose the model, the field and the place. Sales, Purchase, Invoices, Inventory, HR&hellip; any integer, float or monetary field</td></tr>
+  </table>
+
+  <h2 style="margin-top:36px">Quick start</h2>
+  <ol style="line-height:1.8">
+    <li>Install the module. Open <b>Amount in Words &rarr; Settings</b> to choose the language and style.</li>
+    <li>Open <b>Display Rules</b>, create a rule: choose the model (e.g. Sales Order) and "Form view" or "PDF report".</li>
+    <li>In the <b>Fields</b> tab add a line: the numeric field, the field or XPath to place it next to, before/after.</li>
+    <li>Open a record, the words appear. Add as many lines as you need.</li>
+  </ol>
+
+  <h2 style="margin-top:36px">Examples</h2>
+  <p>Hindi: दो लाख तीन सौ पैंतालीस डॉलर मात्र &nbsp;|&nbsp; Urdu: دو لاکھ تین سو پینتالیس ڈالر صرف &nbsp;|&nbsp; Spanish: Doscientos Mil Trescientos Cuarenta Y Cinco</p>
+  <table style="width:100%;border-collapse:collapse">
+    <tr style="background:#f4eef2"><th style="text-align:left;padding:8px">Input</th><th style="text-align:left;padding:8px">English</th><th style="text-align:left;padding:8px">বাংলা</th></tr>
+    <tr><td style="padding:8px">12,345,678</td><td style="padding:8px">Twelve Million Three Hundred Forty-Five Thousand Six Hundred Seventy-Eight</td><td style="padding:8px">এক কোটি তেইশ লক্ষ পঁয়তাল্লিশ হাজার ছয় শত আটাত্তর</td></tr>
+    <tr><td style="padding:8px">12.34</td><td style="padding:8px">Twelve Point Three Four</td><td style="padding:8px">বারো দশমিক তিন চার</td></tr>
+    <tr><td style="padding:8px">150.50 BDT</td><td style="padding:8px">One Hundred Fifty Taka and Fifty Paisa</td><td style="padding:8px">এক শত পঞ্চাশ টাকা এবং পঞ্চাশ পয়সা</td></tr>
+  </table>
+
+  <h2 style="margin-top:36px">FAQ</h2>
+  <p><b>Does it need <code>num2words</code>?</b> No, the engines are included.</p>
+  <p><b>Does it change my invoices?</b> Only if you choose Bangla, a forced language or lakh/crore. Otherwise Odoo's own behaviour is untouched.</p>
+  <p><b>Which languages are supported?</b> English, Bangla, Hindi and Urdu are built in. Every other language that Odoo's own <code>num2words</code> library supports (about 45, including Spanish, Arabic, French, German, Portuguese, Russian, Turkish, Indonesian, Japanese, Korean) is written automatically in the language of the user. A language supported by neither is written in English.</p>
+
+  <h2 style="margin-top:36px">Changelog</h2>
+  <ul style="line-height:1.7">
+    <li><b>19.0.1.0.0</b> First release.</li>
+  </ul>
+
+  <h2 style="margin-top:36px">Support</h2>
+  <p>Bug reports and questions are answered through the Odoo Apps page of this module.</p>
+</section>
